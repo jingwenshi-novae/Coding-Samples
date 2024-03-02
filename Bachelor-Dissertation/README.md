@@ -7,7 +7,7 @@ Examine how Covid-19 influence social charitable behaviors through a continuous 
 3- [covid_charity.do](https://github.com/JingwenSHI-Novae/Coding-Samples/blob/main/Bachelor-Dissertation/covid_charity.do): Main of the data process and report of results.
 
 
-Summary of the research:
+**Summary of the research:**
 
 -	Provided empirical evidence of whether social charitable giving would be affected by pandemics in the context of the Covid-19 and investigated several channels that might take effect using CLRS survey data
 
