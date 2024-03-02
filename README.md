@@ -1,7 +1,7 @@
 ## Coding Samples
 
 Hi there,
-Here are some work I've done during my undergrad and master's.
+here are some work I've done during my undergrad and master's.
 
 🔭 **Stata coding**
 - [Regression analysis](https://github.com/JingwenSHI-Novae/Coding-Samples/tree/main/Regression-Analysis)
