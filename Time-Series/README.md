@@ -1,7 +1,7 @@
 Study the impact of COVID-19 in Shanghai on SMEs’ firm value through event study method.
 
 
-Summary:
+**Summary of the research:**
 
 -	Conducted macro analysis with data from the Shanghai Bureau of Statistics and Global Economic Indicators
 
