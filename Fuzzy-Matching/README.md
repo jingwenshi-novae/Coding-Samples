@@ -1,0 +1,1 @@
+Matched address and location using [Stata](https://github.com/JingwenSHI-Novae/Coding-Samples/blob/main/Fuzzy-Matching/stata_match.do) (matchit, reclink2) or [Python](https://github.com/JingwenSHI-Novae/Coding-Samples/blob/main/Fuzzy-Matching/address_fuzzymatch.py) (fuzzywuzzy).
