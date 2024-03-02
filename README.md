@@ -1,4 +1,4 @@
-# Coding-Samples
+## Coding-Samples
 
 Hi there,
 Here are some work I've done during my undergrad and master's.
