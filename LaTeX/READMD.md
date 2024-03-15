@@ -1,1 +1,1 @@
-Regression result into LaTeX table.
+Regression result into LaTeX table: stata code and 
