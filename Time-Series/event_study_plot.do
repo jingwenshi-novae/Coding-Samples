@@ -2,6 +2,13 @@ clear
 clear matrix
 set more off
 
+
+ssc install ivreghdfe, replace
+ssc install eventcoefplot, replace
+ssc install tuples,replace
+ssc install eststo,replace
+
+
 global myPATH "C:\Users\Jingwen Shi\Desktop\RAs\0307 Using 44 clusters"
 cd "$myPATH\Pre-condition (change over time)"
 
@@ -23,10 +30,6 @@ gen mkt16_1700=Market_1600*per1700
 save 44_CNTY_IR_periodreg.dta,replace
 
 
-ssc install ivreghdfe, replace
-ssc install eventcoefplot, replace
-ssc install tuples,replace
-ssc install eststo,replace
 
 use 44_CNTY_IR_periodreg.dta,clear
 forvalues i=0(1)42 {
