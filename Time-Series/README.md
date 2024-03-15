@@ -1,3 +1,6 @@
+[event_study_plot.do](https://github.com/jingwenshi-novae/Coding-Samples/blob/main/Time-Series/event_study_plot.do) is a sample of using stata package "eventcoefplot".
+
+[SME_event_study.do](https://github.com/jingwenshi-novae/Coding-Samples/blob/main/Time-Series/SME_event_study.do) is the code of my research:
 Study the impact of COVID-19 in Shanghai on SMEs’ firm value through event study method.
 
 
