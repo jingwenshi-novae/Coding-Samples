@@ -1,3 +1,7 @@
+**Package Used:**
+- ***STATA:** ivreghdfe, eventcoefplot, tuples, eststo*
+
+
 [event_study_plot.do](https://github.com/jingwenshi-novae/Coding-Samples/blob/main/Time-Series/event_study_plot.do) is a sample of using stata package "eventcoefplot".
 
 [SME_event_study.do](https://github.com/jingwenshi-novae/Coding-Samples/blob/main/Time-Series/SME_event_study.do) is the code of my research:
