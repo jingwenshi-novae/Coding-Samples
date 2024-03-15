@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amssymb}
+\usepackage[para,online,flushleft]{threeparttable}
+\usepackage{array}
+
+\begin{document}
+
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Proverb Prediction of Industrial Revolution (Geo, Agr \& Mkt controls)}\
+(Dependent Variable: Number of Steam Engines, pre-1800)\\
+\begin{threeparttable}
+\setlength{\tabcolsep}{1mm}{
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{l*{7}{c}}\\
+\hline\hline
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}&\multicolumn{1}{c}{(7)}\\
+            % 3 7 10 13 26 39 42
+            &\multicolumn{1}{c}{Wealth}&\multicolumn{1}{c}{Knowledge}&\multicolumn{1}{c}{Friendship}&\multicolumn{1}{c}{Peace}&\multicolumn{1}{c}{Luck}&\multicolumn{1}{c}{Envy}&\multicolumn{1}{c}{Privacy}\\
+\hline
+cluster\_pub &      12.914\sym{*}  &      21.245\sym{**} &     -12.517\sym{*}  &      -5.926\sym{*}  &     176.565\sym{**} &     291.739\sym{***}&    -101.924\sym{***}\\
+            &     (6.581)         &     (7.485)         &     (7.013)         &     (3.317)         &    (78.406)         &    (32.291)         &    (27.810)         \\
+[1em]
+Market1349 &      -1.084         &      -0.549         &      -0.840         &      -0.600         &      -0.464         &      -0.305         &       0.143         \\
+            &     (0.744)         &     (0.551)         &     (0.712)         &     (0.793)         &     (0.712)         &     (0.683)         &     (0.508)         \\
+[1em]
+\_cons      &    1534.799         &     378.158         &    1916.324         &    1912.315         &    1751.113         &    2003.697\sym{*}  &     804.496         \\
+            &   (994.470)         &  (1036.135)         &  (1381.306)         &  (1425.146)         &  (1055.055)         &  (1006.331)         &  (1193.459)         \\
+[1em]
+Controls\tnote{1}      &     $\checkmark$  &     $\checkmark$         &     $\checkmark$         &     $\checkmark$         &     $\checkmark$         &     $\checkmark$         &     $\checkmark$         \\
+\hline
+\(N\)       &          31         &          31         &          31         &          31         &          31         &          31         &          31         \\
+\(R^{2}\)   &        0.78         &        0.81         &        0.71         &        0.71         &        0.79         &        0.85         &        0.74         \\
+adj. \(R^{2}\)&        0.59         &        0.65         &        0.46         &        0.46         &        0.61         &        0.71         &        0.52         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.1\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}}
+\begin{tablenotes}
+\item[1] whe, feasibility\_general, percarable1290, tri, coalarea, dist\_coal, slope\_percent, elevation, latitude, log\_dist\_lon, log\_river, log\_coast
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+
+\end{document}
