@@ -1,0 +1,227 @@
+\documentclass{beamer}
+
+\mode<presentation>
+{
+  \geometry{left=1cm,right=1cm}
+  \usetheme{default}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{serif}
+  \setbeamerfont{title}{size=\Large,series=\mdseries,parent=structure}
+  \setbeamerfont{frametitle}{series=\mdseries,parent=structure}
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{multicol}
+\setlength{\columnsep}{12pt}
+
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{lmodern}
+
+
+\begin{document}
+
+
+% Uncomment these lines for an automatically generated outline.
+% 1 New lords, new laws
+\begin{frame}{Example Proverbs with Explanations}\\
+[1em]
+\begin{multicols}{2}
+[
+\section{First Section}
+\begin{itemize}
+\item “New lords have new laws.”
+\end{itemize}
+]
+\begin{spacing}{0.6}%
+{\fontsize{8pt}{1pt}\selectfont
+\textsf{[GPT]}\\
+[1em]
+\textsf{This proverb means that when there is a change in leadership or authority, there will likely be changes in rules and regul  ations. It implies that those in power have the ability to make and enforce their own laws. The moral implication of this proverb is that people should be aware of the potential for changes in laws and regulations when there is a change in leadership. It also suggests that people should be prepared to adapt to new rules and regulations when necessary. The behavioral implication is that people should be respectful of those in power and follow the laws that they create. The ethical implication is that those in power should use their authority responsibly and create laws that are fair and just for all.}
+}
+\end{spacing}
+
+\columnbreak
+\begin{spacing}{0.6}%
+{\fontsize{8pt}{1pt}\selectfont
+\textsf{[Manser's Dictionary of Proverbs]}\\
+[1em]
+\textsf{When a new ruler or government comes to power—or when a new person takes control of a situation—changes are made and different rules apply: “‘What’s yer (your) hurry then, Laban?’ inquired Coggan. ‘You used to bide as late as the latest.’ ‘Well, ye (you) see, neighbours, I was lately married to a woman, and she’s my vocation now. . . . ’ The young man halted lamely. ‘New lords new laws, as the saying is, I suppose,’ remarked Coggan” (Thomas Hardy, Far from the Madding Crowd, 1874). The proverb was first recorded in the mid-16th century, but with the implication that it had long been in general use.}
+}
+
+\end{spacing}
+\end{multicols}
+\end{frame}
+
+
+
+% 2 the absent party is still faulty.
+\begin{frame}{Example Proverbs with Explanations}\\
+[1em]
+\begin{multicols}{2}
+[
+\section{First Section}
+\begin{itemize}
+\item “The absent party is still faulty.”
+\end{itemize}
+]
+\begin{spacing}{0.6}%
+{\fontsize{8pt}{1pt}\selectfont
+\textsf{[GPT]}\\
+[1em]
+\textsf{This proverb means that when someone is not present to defend themselves or explain their actions, they are often blamed or considered guilty. It implies that people tend to judge others based on incomplete information or hearsay. The moral implication of this proverb is that we should be careful not to jump to conclusions or make assumptions about others without hearing their side of the story. It also suggests that we should give people the benefit of the doubt and not rush to judgment.}
+}
+\end{spacing}
+
+\columnbreak
+\begin{spacing}{0.6}%
+{\fontsize{8pt}{1pt}\selectfont
+\textsf{[Manser's Dictionary of Proverbs]}\\
+[1em]
+\textsf{It is easy to accuse or attack those who are not present to defend themselves or their rights or arguments: “I will quote first that fine old French saying—which covers any claim Charlie may or may not have on that cake—‘he who is absent is always in the wrong’” (Anthony Price, Soldier No More, 1981). The French saying referred to in this quotation is “Les absents ont toujours tort.” The proverb was first recorded in English in 1640 in the form “The absent party is still faulty.”}
+}
+
+\end{spacing}
+\end{multicols}
+\end{frame}
+
+
+% 3 Out of debt, out of danger
+\begin{frame}{Example Proverbs with Explanations}\\
+[1em]
+\begin{multicols}{2}
+[
+\section{First Section}
+\begin{itemize}
+\item “Out of debt, out of danger.”
+\end{itemize}
+]
+\begin{spacing}{0.6}%
+{\fontsize{8pt}{1pt}\selectfont
+\textsf{[GPT]}\\
+[1em]
+\textsf{This proverb means that if you are free from debt, you are also free from the danger that comes with it. It implies that being in debt can be risky and stressful, and that it is important to avoid it if possible. The moral implication is that it is wise to live within your means and avoid taking on more debt than you can handle. The behavioral implication is that it is important to be responsible with your finances and avoid overspending. The ethical implication is that it is important to pay back any debts you owe, as failing to do so can harm others and damage your reputation.}
+}
+\end{spacing}
+
+\columnbreak
+\begin{spacing}{0.6}%
+{\fontsize{8pt}{1pt}\selectfont
+\textsf{[Manser's Dictionary of Proverbs]}\\
+[1em]
+\textsf{Nobody who owes money can feel safe and secure: I breathed a sigh of relief as I handed over the wad of bills—out of debt, out of danger. The proverb was first recorded in 1639. \\
+[0.5em]
+Proverb expressing similar meaning: a man in debt is caught in a net.}
+}
+
+\end{spacing}
+\end{multicols}
+\end{frame}
+
+
+% 4 Better be dead as out of fashion
+\begin{frame}{Example Proverbs with Explanations}\\
+[1em]
+\begin{multicols}{2}
+[
+\section{First Section}
+\begin{itemize}
+\item “Better be dead as out of fashion.”
+\end{itemize}
+]
+\begin{spacing}{0.6}%
+{\fontsize{8pt}{1pt}\selectfont
+\textsf{[GPT]}\\
+[1em]
+\textsf{This proverb means that it is better to die than to be seen as unfashionable or out of style. It implies that people value their appearance and reputation more than their life. The moral implication of this proverb is that one should not prioritize superficial things over their own well-being and values. It also suggests that people should not be too concerned with what others think of them and should focus on being true to themselves.}
+}
+\end{spacing}
+
+\columnbreak
+\begin{spacing}{0.6}%
+{\fontsize{8pt}{1pt}\selectfont
+\textsf{[Manser's Dictionary of Proverbs]}\\
+[1em]
+\textsf{Some people are so intent on following fashion that it seems they would rather die than do otherwise; also used with the implication that something that is not fashionable might as well not exist: “Women seem seldom hindered by lack of money when it is a case of follow my-leader. ‘Better be out of the world than out of the fashion’” (E. F. Maitland, From Window in Chelsea, 1903). The proverb was first recorded in 1639.\\
+[0.5em]
+Variant of this proverb: better be out of the world than out of fashion.}
+}
+
+\end{spacing}
+\end{multicols}
+\end{frame}
+
+
+
+% 5 Every man for himself, and god for us all.
+\begin{frame}{Example Proverbs with Explanations}\\
+[1em]
+\begin{multicols}{2}
+[
+\section{First Section}
+\begin{itemize}
+\item “Every man for himself, and god for us all.”
+\end{itemize}
+]
+\begin{spacing}{0.6}%
+{\fontsize{8pt}{1pt}\selectfont
+\textsf{[GPT]}\\
+[1em]
+\textsf{This proverb means that in difficult situations, people will prioritize their own survival and well-being over helping others. It suggests that individuals should rely on themselves rather than expecting help from others. The proverb also implies that people should trust in a higher power, such as God, to provide assistance when needed. The moral implication of this proverb is that self-preservation is important, but it should not come at the expense of others. It is important to strike a balance between taking care of oneself and helping others in need.}
+}
+\end{spacing}
+
+\columnbreak
+\begin{spacing}{0.6}%
+{\fontsize{8pt}{1pt}\selectfont
+\textsf{[Manser's Dictionary of Proverbs]}\\
+[1em]
+\textsf{At times of crisis or great danger, each must take responsibility for his or her own personal survival and hope for divine protection for everybody: “‘Every man for himself, and God for us all!’ was the cool answer of the refractory seaman” (Captain Marryat, The King’s Own, 1830). The proverb was fi rst recorded in 1546. In the shorter form “Every man for himself” it is of earlier origin, occurring in Chaucer’s Canterbury Tales (c. 1390): “Ech (Each) man for himself (himself), ther (there) is noon oother (no other).”}
+}
+
+\end{spacing}
+\end{multicols}
+\end{frame}
+
+
+
+
+\begin{frame}{Proverbs not in Manser's Dictionary of Proverbs}
+\begin{itemize}
+
+{\fontsize{10pt}{0pt}\selectfont
+\item Ray \\
+[0.5em]}
+{\fontsize{9pt}{12pt}\selectfont
+“As fierce as a goose.”\\
+“Reckon right, and February has thirty-one days.”\\
+[0.5em]}
+{\fontsize{10pt}{0pt}\selectfont
+\item Christy \\
+[0.5em]}
+{\fontsize{9pt}{12pt}\selectfont
+“Success is the child of audacity.”\\
+“The palate kills more than the sword.”\\
+“The wise man knows he knows nothing, the fool thinks he knows all.”\\
+[0.5em]}
+{\fontsize{10pt}{0pt}\selectfont
+\item Ray \& Christy \\
+[0.5em]}
+{\fontsize{9pt}{12pt}\selectfont
+“The Smith and his penny are both black.”\\
+“With cost one may make pottage of a stool foot.”\\
+“As a man is friended, so the law is ended.”\\
+“The evening crowns the day.”\\
+“Money is welcome though it come in a shitten (dirty) clout.”\\
+“Jest not with the eye, nor religion.”\\
+“When a thing is done advice comes too late.”\\}
+
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}
