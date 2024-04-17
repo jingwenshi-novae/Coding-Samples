@@ -20,7 +20,7 @@ Hi there, here are some work I've done during my undergrad and master's.
 - [Feler & Senses (2017)](https://github.com/JingwenSHI-Novae/Coding-Samples/tree/main/Replication)
 
 🔭 **Other tools**
-- [LaTeX](https://github.com/jingwenshi-novae/Coding-Samples/tree/main/LaTeX)
+- [LaTex](https://github.com/jingwenshi-novae/Coding-Samples/tree/main/LaTeX)
 - [ArcGIS](https://github.com/JingwenSHI-Novae/Coding-Samples/tree/main/ArcGIS)
 
 
