@@ -25,8 +25,8 @@ headers = {
 }
 url = "https://www.oxforddnb.com/"
 data = {
-    "user": "hjp8636@icloud.com",
-    "pass": "Pxhh02200059@"
+    "user": "xxxxx@icloud.com",
+    "pass": "xxxxxx"
 }
 
 # Create a session object
@@ -195,8 +195,8 @@ def main():
     service = Service(chrome_driver_path)
     driver = webdriver.Chrome(service=service, options=chrome_options)
 
-    username = "hjp8636@icloud.com"
-    password = "Pxhh02200059@"
+    username = "xxxxxx@icloud.com"
+    password = "xxxxxxx"
 
     ua = UserAgent()
     articles = {}
@@ -605,8 +605,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-
-# In[ ]:
 
 
 
