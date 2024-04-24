@@ -200,7 +200,7 @@ def main():
 
     ua = UserAgent()
     articles = {}
-    for start_num in range(1, 3867):
+    for start_num in range(1, 3888):
         random_user_agent = ua.random
         headers = {"User-Agent": random_user_agent}
         reconnect = 0
@@ -299,7 +299,7 @@ def main():
 
     ua = UserAgent()
     articles = {}
-    for start_num in range(1, 3867):
+    for start_num in range(1, 3888):
         random_user_agent = ua.random
         headers = {"User-Agent": random_user_agent}
         reconnect = 0
@@ -432,7 +432,7 @@ def main():
     ua = UserAgent()
     articles = {}
     valid_names = read_names_from_csv("C:/Users/Jingwen Shi/Desktop/RAs/0406_proverb/scrape all ODNB/Oxford Name.csv",1)
-    for start_num in range(1,3867):
+    for start_num in range(1,3888):
         random_user_agent = ua.random
         headers = {"User-Agent": random_user_agent}
         reconnect = 0
@@ -563,7 +563,7 @@ def main():
     ua = UserAgent()
     articles = {}
     valid_names = read_names_from_csv("C:/Users/Jingwen Shi/Desktop/RAs/0406_proverb/scrape all ODNB/Oxford Name.csv",1)
-    for start_num in range(1, 3867):
+    for start_num in range(1, 3888):
         random_user_agent = ua.random
         headers = {"User-Agent": random_user_agent}
         reconnect = 0
