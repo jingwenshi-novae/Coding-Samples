@@ -62,7 +62,7 @@ from bs4 import BeautifulSoup
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0"
 }
-for start_num in range(1,3867,1):
+for start_num in range(1,3888,1):
 	response = requests.get(f"https://www.oxforddnb.com/browse?isQuickSearch=true&pageSize=20&sort=titlesort&page={start_num}", headers=headers)
 	print(response.status_code)
 	html = response.text
