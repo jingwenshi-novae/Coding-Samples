@@ -5,10 +5,10 @@
 
 Two methods of doing text analysis:
 
-1- [chatgpt_api.py](https://github.com/JingwenSHI-Novae/Coding-Samples/blob/main/Text-Analysis/chatgpt_api.py): use API to analyze texts with GPT
----- I refine the code based on an existing.
+1- [text_analysis_combined.ipynb](https://github.com/jingwenshi-novae/Coding-Samples/blob/main/Text-Analysis/text_analysis_combined.ipynb):word frequency, narratives, text sentiment, keywords, stopwords, plotting and regression analysis
 
-2- [text_analysis_combined.ipynb](https://github.com/jingwenshi-novae/Coding-Samples/blob/main/Text-Analysis/text_analysis_combined.ipynb):word frequency, narratives, text sentiment, keywords, stopwords, plotting and regression analysis
+2- [chatgpt_api.py](https://github.com/JingwenSHI-Novae/Coding-Samples/blob/main/Text-Analysis/chatgpt_api.py): use API to analyze texts with GPT
+---- I refine the code based on an existing.
 
 3- [Chinese_NLP.py](https://github.com/JingwenSHI-Novae/Coding-Samples/blob/main/Text-Analysis/NLP.py): use SnowNLP to conduct (Chinese) text sentiment analysis
 
