@@ -1,0 +1,161 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[a4paper]{geometry}
+
+\geometry{left=2.8cm, right=2.8cm}
+\geometry{top=2cm, bottom=2cm}
+
+\title{Short Report on Newspaper Text Analysis}
+\author{Jingwen Shi}
+\date{May 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Questions in Part 2}
+\begin{itemize}
+\item \textbf{ How do you deal with the noise (e.g., spelling mistakes, punctuation errors) in the OCRed text? Is this noise a problem for SBERT?}\\
+[0.5em]
+In performing OCR, I already applied some methods dealing with noise, including:\\
+[0.5em]
+1) Dealing with common OCR misinterpretations (e.g., “ ' ” and “ ‘ ”; “.” and “,”);\\
+2) Removing hyphens between words at the end of the line;\\
+3) Converting line breaks following sentence-ending punctuation into a space if followed directly by a letter or number;\\
+4) Removing newlines that occur within sentences;\\
+5) Replacing multiple spaces with a single space;\\
+[1em]
+When using SBERT to “embed” the text, I compare the two situations of: (1) correcting the spelling error and removing unrecognized characters, and (2) keeping these “noise”.\\
+[0.5em]
+I compare the embeddings gained from these two situations with the average cosine similarity (0.652), which results show a moderate to strong positive similarity between the two sets of embeddings, though there still exists some difference.\\
+[0.5em]
+Therefore, whether it is necessary for preprocessing of noise such as spelling mistakes depend on the accurateness required by the analysis. For the following parts in this newspaper text analysis, I continue to use the embeddings without spelling correction because (1) it has relative robustness; (2) the spelling correction runs slow, so I kept the part of spelling correction and comparison as command in my submitted code.
+\item \textbf{ How do you handle embedding very long articles?}\\
+[0.5em]
+In order to avoid exceeding SBERT model's maximum sequence length, I chunked the sentences over 512 tokens into pieces that are shorter than 256 tokens.\\
+[0.5em]
+\end{itemize}
+
+\section{Questions in Part 3: analyze visualization results}
+\begin{itemize}
+\item \textbf{ Do the clusters of vectors look meaningful?}\\
+[0.5em]
+The clusters of vectors in both 2D and 3D visualizaton shows well-separated patterns. They adjacent at the borders, and therefore, there could be some overlapping of topics between the two neighbouring clusters.\\
+\item \textbf{ Could you find clusters of important topics?}\\
+[0.5em]
+I drew wordclouds for reducing to 2-dimension and 3-dimension separately, as shown in the results in the htmls.\\
+[1em]
+\textbf{Clusters of 2-dimension method include important topics such as:}\\
+[0.5em]
+1) Cluster 0:  “Johnson”, “president”,  “new”;\\ 
+2) Cluster 1: “state”, “president”, “new”, “world”;
+
+\textit{\noindent\quad These two clusters are probably about the new election of US president. They are very similar with some difference in the focus of news reporting.}\\
+3) Cluster 2: “precinct”, “school”, “Mitchell”;\\
+4) Cluster 3: “state”, “school”, “inches”, “new”;
+
+\textit{\noindent\quad These two clusters are probably about the regional schooling programme in the country.}\\
+5) Cluster 4: “price”, “atomic”.
+
+\textit{\noindent\quad This cluster is probably about some macro policies.}\\
+[1em]
+\textbf{Clusters of 3-dimension method include important topics such as:}\\
+[0.5em]
+1) Cluster 0: “atomic”, “new”;
+
+\textit{\noindent\quad Corresponding to Cluster 4 in 2-dimension method.}\\
+2) Cluster 1: “state”, “new”, “election”;
+
+\textit{\noindent\quad Corresponding to Cluster 0 in 2-dimension method.}\\
+3) Cluster 2: “school”, “Mitchell”;
+
+\textit{\noindent\quad Corresponding to Cluster 2 in 2-dimension method.}\\
+4) Cluster 3: “state”, “inches”, “school”;
+
+\textit{\noindent\quad Corresponding to Cluster 3 in 2-dimension method.}\\
+5) Cluster 4: “president”, “precinct”, “school”, “new”, “price”.
+
+\textit{\noindent\quad This cluster is relatively more compounded, and none of the topics are of particular significance. It may still be relevant to the election, but more like a mix of the unclustered obscure topics.}\\
+[0.5em]
+\end{itemize}
+
+\section{Implemention and Extra Notes}
+
+{\Large \textbf{\noindent\quad Part 1}}
+\begin{itemize}
+\item \textbf{ OCR Processing:}
+
+The \textit{ocr\_image\_region} function applies OCR to specified image regions to extract text.
+The \textit{clean\_ocr\_text} function then cleans this text by fixing common OCR errors such as misinterpreted punctuation and unnecessary hyphens.
+\item \textbf{ Article Reconstruction:}
+
+Using the \textit{parse\_newspaper\_scan} function, articles are reconstructed from text blocks based on the reading order. This involves:\\
+1) mapping category IDs to names to differentiate between headlines and body text; \\
+2) traversing connected text blocks to assemble complete articles.
+\item \textbf{ Saving Results:}
+
+The extracted articles are saved in JSON format.\\
+\end{itemize}
+
+{\Large \textbf{Part 2}}
+\begin{itemize}
+\item \textbf{ Text Preprocessing:}
+
+The\textit{ preprocess\_text} function cleans up the text by fixing basic punctuation issues and removing unwanted characters.
+\item \textbf{ Text Embedding:}
+
+Depending on the length of the article, different embedding strategies are used:\\
+[0.5em]
+1) Short Articles (below 512 tokens): Directly encoded using the \textit{embed\_short\_article} function.\\
+[0.5em]
+2) Long Articles (exceeding 512 tokens): Split into smaller chunks and then encoded using the \textit{embed\_long\_article} function. This involves: (i) Splitting the text into sentences and grouping them into chunks to avoid truncation; (ii) Each chunk is then embedded separately, and the embeddings are averaged to represent the entire article.
+\item \textbf{ Saving Embeddings:}
+
+The embeddings for all articles are compiled into a numpy array and then saved into a CSV file.\\
+\end{itemize}
+
+{\Large \textbf{Part 3}}
+\begin{itemize}
+
+\item \textbf{ Data Preparation:}
+
+Define a combined set of stopwords, merging default English stopwords with custom ones like “said”, “would”, and “year” to refine text processing.
+\item \textbf{ Dimensionality Reduction:}
+
+(1) Use t-SNE to reduce the embeddings to 2D for visualizing in a two-dimensional space; (2) Use PCA to reduce the same embeddings to 3D for visualizing in a three-dimensional space.
+\item \textbf{ Clustering:}
+
+Apply K-Means clustering on the original high-dimensional embeddings (to preserve the integrity of distances) to group similar articles into clusters.
+\item \textbf{ Visualization:}
+
+2D Visualization: Generate a scatter plot using Matplotlib to display the 2D t-SNE embeddings. \\
+3D Visualization: Create a 3D scatter plot using Plotly to visualize the PCA-reduced 3D embeddings.
+\item \textbf{ Word Cloud Generation:}
+
+For each cluster, generate a word cloud to visualize the most frequent terms using the WordCloud library.
+\item \textbf{ Saving Results in HTML:}
+
+Generate HTML content that combines links to the scatter plots, embedded 3D visualizations, and images of the word clouds for each cluster.\\
+[0.5em]
+\end{itemize}
+
+\section{Challenges and Questions}
+\begin{itemize}
+\item \textbf{ Punctuation Error of Commas and Periods (partly solved)}
+
+There is a typical comma and period specification error when using the TesseractOCR engine in Python. It mistook most periods for commas. To correct this problem, I replaced all commas that are followed by spaces and capital letters with periods.\\
+[0.5em]
+However, though this method can correct most cases, it may mistakenly replace commas followed by names or locations with periods.This is one remaining question.
+\item \textbf{ Overlapping of Bordering Clusters (planned)}
+
+As illustrated in \textit{Questions in Part 3}, the clusters are relatively well separated with each other, but could have overlapping topics on neibouring borders. As a result, some of the clusters show very similar results (e.g., cluster 0 and cluster 1 in 2D case; cluster 2 and cluster 3 in 2D case).\\
+[0.5em]
+I think this may be due to the fact that many of the subjects are closely related to each other. As the objects are newspapers, the focus can be quite similar (e.g., state, election, policy,...), and most of the topics are interrelated. The compactness of the visualization plots supports this idea. \\
+[0.5em]
+Further processing can try chunking the sentences into smaller units, to generate more independent topics from each chunk; or dynamically set the number of clusters to find the optimal clustering numbers.
+\item \textbf{ Nonsense Characters in Wordclouds (solved)}
+
+In visualizing the topics, I created wordclouds for each cluster. At first, despite using a stop word dictionary and some custom stop words, there still existed some nonsense characters. Most nonsense characters (such as “M”) came from the abbreviations of person's name. Therefore, I also included all capital letters in the stop words to fix this problem.
+
+\end{itemize}
+\end{document}
