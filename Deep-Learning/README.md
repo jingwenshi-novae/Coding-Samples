@@ -4,4 +4,4 @@
 
 From Melissa Dell's predoc coding task: [melissa_dell_predoc_newspaper_ocr](https://github.com/jingwenshi-novae/Coding-Samples/blob/main/Deep-Learning/melissa_dell_predoc_newspaper_ocr.ipynb)
 
-Tasks: (1) OCR; (2) Sentence-Bert; (3) [Visualization](https://github.com/jingwenshi-novae/Coding-Samples/blob/main/Deep-Learning/visualization_results_3D.html).
+Tasks: (1) OCR; (2) Sentence-Bert; (3) [Visualization](https://github.com/jingwenshi-novae/Coding-Samples/blob/main/Deep-Learning/visualization_results_3D.html); (4) [Short report](https://github.com/jingwenshi-novae/Coding-Samples/blob/main/LaTex/Melissa%20Dell%20predoc%20test%20report.txt).
