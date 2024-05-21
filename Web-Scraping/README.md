@@ -8,4 +8,6 @@
 
 [scrape_dynamic_page_login.py](https://github.com/jingwenshi-novae/Coding-Samples/blob/main/Web-Scraping/scrape_dynamic_page_login.py): Scrape all articles from the dynamic websites which requires login. Including various methods such as simulating login and logout, or selenium.
 
+[extract_locations_from_text.py](https://github.com/jingwenshi-novae/Coding-Samples/blob/main/Web-Scraping/extract_locations_from_texts.py): Match all geolocations from the scraped articles with two methods: 1) Directly matching; 2) Identifying locations automatically before matching.
+
 [combine_json.ipynb](https://github.com/jingwenshi-novae/Coding-Samples/blob/main/Web-Scraping/combine_json.py): Combining json files into one json file.
