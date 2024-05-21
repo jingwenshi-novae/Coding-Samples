@@ -1,5 +1,5 @@
 **Package Used: Python**
-- ***Main:** requests, Beautifulsoup, re, selenium*
+- ***Main:** requests, Beautifulsoup, re, selenium, nltk*
 - ***More:** UserAgent, json, time, csv, os, selenium (webdriver, By, Service, Options, Keys, StaleElementReferenceException, TimeoutException, WebDriverWait, expected_conditions)*
 
 [scrape_static_page_re.py](https://github.com/jingwenshi-novae/Coding-Samples/blob/main/Web-Scraping/scrape_static_page_re.py): Scraped over 70+ thousands of names of the authors, their occupations, birth and death dates and locations from the ODNB website.
